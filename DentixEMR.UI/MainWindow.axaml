@@ -1,0 +1,128 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+        Width="1024" Height="600"
+        x:Class="DentixEMR.UI.MainWindow"
+        Title="DentixEMR.UI">
+        <Grid Background="{DynamicResource ResourceKey=PrimaryBackground}" 
+      ColumnDefinitions="600, *">
+    
+    <!-- Left Sidebar -->
+<Border Grid.Column="0" 
+        Padding="40"
+        Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}">
+    <StackPanel VerticalAlignment="Center">
+        <!-- Logo/Title -->
+        <TextBlock Text="DentixEMR" 
+                   FontSize="28" 
+                   FontWeight="SemiBold" 
+                   Foreground="White"
+                   Margin="0,0,0,10"
+                   TextAlignment="Center"/>
+        
+        <TextBlock Text="Smart Dental Electronic Medical Record System" 
+                   FontSize="10" 
+                   Foreground="White"
+                   TextWrapping="Wrap"
+                   Margin="0,0,0,80"
+                   TextAlignment="Center"/>
+    </StackPanel>
+</Border>
+
+<!-- Main Content Area  -->
+<Border Grid.Column="1" 
+        Background="White">
+    <Grid VerticalAlignment="Center" 
+          HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center">
+            <!-- Welcome Back Title -->
+            <TextBlock Text="Hello!" 
+                       FontSize="24" 
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       Margin="0,0,0,5"
+                       TextAlignment="Center"/>
+            
+            <TextBlock Text="Welcome in DentixEMR" 
+                       FontSize="10" 
+                       Foreground="#666"
+                       Margin="0,0,0,40"
+                       TextAlignment="Center"/>
+            
+            <!-- Email Field -->
+            <StackPanel HorizontalAlignment="Center" Margin="0,0,0,20">
+                <TextBlock Text="Email Address" 
+                           FontSize="12" 
+                           Foreground="Black"
+                           FontWeight="Medium"
+                           Margin="0,0,0,5"
+                           TextAlignment="Center"/>
+                <TextBox Height="20" 
+                         Width="200"
+                         Foreground="White"
+                         Padding="10" 
+                         CornerRadius="8"
+                         BorderThickness="1"
+                         BorderBrush="#ddd"
+                         HorizontalAlignment="Center"/>
+            </StackPanel>
+            
+            <!-- Password Field -->
+            <StackPanel HorizontalAlignment="Center" Margin="0,0,0,20">
+                <TextBlock Text="Password" 
+                           FontSize="12" 
+                           Foreground="Black"
+                           FontWeight="Medium"
+                           Margin="0,0,0,5"
+                           TextAlignment="Center"/>
+                <TextBox Height="20" 
+                         Width="200"
+                         Padding="10" 
+                         Foreground="White"
+                         BorderThickness="1"
+                         BorderBrush="#ddd"
+                         CornerRadius="8"
+                         HorizontalAlignment="Center"/>
+            </StackPanel>
+            
+            <!-- Login Button -->
+            <Button Content="Login" 
+                    Height="30" 
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Background="DodgerBlue"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    BorderThickness="0"
+                    CornerRadius="10"
+                    Margin="0,0,0,15"/>
+            
+            <!-- Links -->
+            <TextBlock Text="Forgot Password" 
+                       FontSize="10"
+                       Foreground="DodgerBlue"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,10"
+                       Cursor="Hand"
+                       TextAlignment="Center"/>
+            
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Center">
+                <TextBlock Text="Don't have an account? "
+                           FontSize="10"
+                           Foreground="#666"/>
+                <TextBlock Text="Sign Up" 
+                           FontSize="10"
+                           Foreground="DodgerBlue"
+                           FontWeight="Medium"
+                           Cursor="Hand"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Border>
+    
+</Grid>
+</Window>

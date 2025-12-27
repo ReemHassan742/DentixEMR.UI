@@ -1,0 +1,22 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="DentixEMR.UI.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="avares://DentixEMR.UI/Styles/AppDefaultStyle.axaml"></StyleInclude>
+    </Application.Styles>
+    <Application.Resources>
+		
+        <SolidColorBrush x:Key="PrimaryBackground">#0575E6</SolidColorBrush>
+        <SolidColorBrush x:Key="SecondaryTextColor">#000</SolidColorBrush>
+        <LinearGradientBrush x:Key="PrimaryBackgroundGradient" StartPoint="0.5,1" EndPoint="0.5,0">
+                  <GradientStop Color="#0575E6" Offset="0" ></GradientStop>
+                  <GradientStop Color="#02298A" Offset="1" ></GradientStop>
+                  <GradientStop Color="#021B79" Offset="1" ></GradientStop>
+
+        </LinearGradientBrush>
+    </Application.Resources>
+</Application>
