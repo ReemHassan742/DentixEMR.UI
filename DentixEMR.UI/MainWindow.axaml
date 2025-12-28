@@ -112,17 +112,7 @@
                        Cursor="Hand"
                        TextAlignment="Center"/>
             
-            <StackPanel Orientation="Horizontal" 
-                        HorizontalAlignment="Center">
-                <TextBlock Text="Don't have an account? "
-                           FontSize="10"
-                           Foreground="#666"/>
-                <TextBlock Text="Sign Up" 
-                           FontSize="10"
-                           Foreground="DodgerBlue"
-                           FontWeight="Medium"
-                           Cursor="Hand"/>
-            </StackPanel>
+           
         </StackPanel>
     </Grid>
 </Border>
